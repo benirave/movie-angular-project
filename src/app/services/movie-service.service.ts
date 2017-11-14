@@ -8,6 +8,7 @@ export class MovieService {
   private apikey = '?api_key=18f7d642ad10180052c2c8e90fbd56a9&language=en-US&page=1';
   private baseUrl = 'https://api.themoviedb.org/3/';
   private movie = 'movie/';
+  private sortByPopularity = '&sort_by=popularity.desc';  
   private sharedSearchResult: Array<Object> = [];
   
   constructor(private http: Http) {
@@ -26,4 +27,8 @@ export class MovieService {
       .map(result => result.json())
   }
 
+  public searchMovies(query) {
+    return this.http.get(this.baseUrl + 'search/movie' + '&query=' + query + this.sortByPopularity + this.apikey)
+      .map(result => result.json())
+  }
 }

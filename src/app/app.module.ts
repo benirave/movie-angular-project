@@ -5,16 +5,20 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { PopularMoviesComponent } from './popular-movies/popular-movies.component';
 import { TopRatedMoviesComponent } from './top-rated-movies/top-rated-movies.component';
+import { AppRoutingModule } from './app-routing';
+import { SearchMovieComponent } from './search-movie/search-movie.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PopularMoviesComponent,
-    TopRatedMoviesComponent
+    TopRatedMoviesComponent,
+    SearchMovieComponent
   ],
   imports: [
     BrowserModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
