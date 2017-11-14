@@ -21,8 +21,6 @@ export class PopularMoviesComponent implements OnInit {
     }
 
   ngOnInit() {
-    console.log('Running')
-
     this.service.getPopularMovies()
     .subscribe(
       response => { 

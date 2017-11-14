@@ -15,7 +15,7 @@ import 'rxjs/add/operator/switchMap';
 export class DetailMovieComponent implements OnInit {
 
   details: Object;
-  
+  seen = "";
 
   private similarMovies: Array<Object> = [];
   private movie: any = {};
@@ -31,5 +31,14 @@ export class DetailMovieComponent implements OnInit {
       .map(params => params['id'])
       .switchMap(id => this.service.getMovieDetails(id))
       .subscribe(result => this.movie = result);
+  }
+  
+// event binding
+  public seenIt(){
+    this.seen = "Cool!";
+    if(this.seen)
+    {
+      return this.seen;
+    }
   }
 }

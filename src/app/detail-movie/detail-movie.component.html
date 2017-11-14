@@ -20,7 +20,7 @@
                 <strong>Overview:</strong> {{movie.overview}}
               </li>
               <li class="list-group-item">
-                <strong>Budget:</strong> {{movie.budget}}
+                <strong>Budget:</strong> {{movie.budget}} $
               </li>
               <li class="list-group-item">
                 <strong>Genres:</strong> <span *ngFor="let gen of movie.genres">{{gen.name}} </span>
@@ -34,5 +34,12 @@
               <li class="list-group-item">
                 <strong>Rating count:</strong> {{movie.vote_count}}
               </li>
+              <li class="list-group-item">
+                  <strong>Adult:</strong><!-- property binding --><p [textContent]="movie.adult" style="display:inline"></p>
+              </li>
+              <li class="list-group-item">
+                  <strong>Have you seen it?</strong>
+                  <button class="btn btn-primary pane fixed-size" (click)="seenIt()">Yes!</button> {{seen}} <!-- string interpolation -->
+                </li>
             </ul>
             </div>

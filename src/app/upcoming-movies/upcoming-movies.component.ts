@@ -21,8 +21,6 @@ export class UpcomingMoviesComponent implements OnInit {
     }
 
   ngOnInit() {
-    console.log('Running')
-
     this.service.getUpcomingMovies()
     .subscribe(
       response => { 

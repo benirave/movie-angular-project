@@ -16,8 +16,6 @@ export class TopRatedMoviesComponent implements OnInit {
     }
 
   ngOnInit() {
-    console.log('Running')
-
     this.service.getTopRatedMovies()
     .subscribe(
       response => { 

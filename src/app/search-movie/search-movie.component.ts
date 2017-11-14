@@ -1,3 +1,5 @@
+// TODO: do
+
 import { Component, OnInit } from '@angular/core';
 import { MovieService } from '../services/movie-service.service';
 import { Response } from '@angular/http/src/static_response';
@@ -14,9 +16,5 @@ export class SearchMovieComponent implements OnInit {
 
     ngOnInit() {
       
-    }
-  
-    public removeSearchResults() {
-      this.service.searchMovies([]);
     }
 }
