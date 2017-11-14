@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MovieService } from '../services/movie-service.service';
 import { Response } from '@angular/http/src/static_response';
 
+
 @Component({
   selector: 'app-top-rated-movies',
   templateUrl: './top-rated-movies.component.html',

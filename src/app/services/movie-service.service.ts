@@ -3,16 +3,16 @@ import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs';
 import 'rxjs/add/operator/map';
 
+
 @Injectable()
 export class MovieService {
   private apikey = '?api_key=18f7d642ad10180052c2c8e90fbd56a9&language=en-US&page=1';
   private baseUrl = 'https://api.themoviedb.org/3/';
   private movie = 'movie/';
   private sortByPopularity = '&sort_by=popularity.desc';  
-  private sharedSearchResult: Array<Object> = [];
   
   constructor(private http: Http) {
-    console.log('MoviesThemoviedbService started')
+    console.log('Service Started!')
   }
 
   // Methods

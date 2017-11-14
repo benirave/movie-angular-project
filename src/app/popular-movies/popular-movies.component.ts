@@ -29,5 +29,4 @@ export class PopularMoviesComponent implements OnInit {
         this.popularMovies = response.results;
     })
   }
-
 }

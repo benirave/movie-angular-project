@@ -33,7 +33,6 @@ export class DetailMovieComponent implements OnInit {
       .subscribe(result => this.movie = result);
   }
   
-// event binding
   public seenIt(){
     this.seen = "Cool!";
     if(this.seen)

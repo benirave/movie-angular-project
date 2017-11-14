@@ -20,7 +20,7 @@
                 <strong>Overview:</strong> {{movie.overview}}
               </li>
               <li class="list-group-item">
-                <strong>Budget:</strong> {{movie.budget}} $
+                <strong>Budget:</strong> {{movie.budget | currency:'USD':true:'1.2-2'}}
               </li>
               <li class="list-group-item">
                 <strong>Genres:</strong> <span *ngFor="let gen of movie.genres">{{gen.name}} </span>
@@ -39,6 +39,7 @@
               </li>
               <li class="list-group-item">
                   <strong>Have you seen it?</strong>
+                  <!-- Event Binding -->
                   <button class="btn btn-primary pane fixed-size" (click)="seenIt()">Yes!</button> {{seen}} <!-- string interpolation -->
                 </li>
             </ul>
