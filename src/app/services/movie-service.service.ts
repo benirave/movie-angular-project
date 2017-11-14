@@ -36,4 +36,10 @@ export class MovieService {
     return this.http.get(this.baseUrl + this.movie + id + this.apikey)
       .map(result => result.json())
   }
+
+  public getUpcomingMovies() {
+    return this.http.get(this.baseUrl + this.movie + 'upcoming' + this.apikey)
+      .map(result => result.json())
+  }
+
 }

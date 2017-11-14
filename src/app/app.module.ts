@@ -8,6 +8,7 @@ import { TopRatedMoviesComponent } from './top-rated-movies/top-rated-movies.com
 import { AppRoutingModule } from './app-routing';
 import { SearchMovieComponent } from './search-movie/search-movie.component';
 import { DetailMovieComponent } from './detail-movie/detail-movie.component';
+import { UpcomingMoviesComponent } from './upcoming-movies/upcoming-movies.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { DetailMovieComponent } from './detail-movie/detail-movie.component';
     PopularMoviesComponent,
     TopRatedMoviesComponent,
     SearchMovieComponent,
-    DetailMovieComponent
+    DetailMovieComponent,
+    UpcomingMoviesComponent
   ],
   imports: [
     BrowserModule,
