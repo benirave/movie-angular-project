@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MovieService } from '../services/movie-service.service';
+import { Response } from '@angular/http/src/static_response';
 
 @Component({
   selector: 'app-search-movie',
@@ -6,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-movie.component.css']
 })
 export class SearchMovieComponent implements OnInit {
+  
+    constructor(private service: MovieService) {
+    }
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+    ngOnInit() {
+      
+    }
+  
+    public removeSearchResults() {
+      this.service.searchMovies([]);
+    }
 }

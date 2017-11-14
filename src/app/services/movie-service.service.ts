@@ -31,4 +31,9 @@ export class MovieService {
     return this.http.get(this.baseUrl + 'search/movie' + '&query=' + query + this.sortByPopularity + this.apikey)
       .map(result => result.json())
   }
+
+  public getMovieDetails(id) {
+    return this.http.get(this.baseUrl + this.movie + id + this.apikey)
+      .map(result => result.json())
+  }
 }

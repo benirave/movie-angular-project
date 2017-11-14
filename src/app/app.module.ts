@@ -7,13 +7,15 @@ import { PopularMoviesComponent } from './popular-movies/popular-movies.componen
 import { TopRatedMoviesComponent } from './top-rated-movies/top-rated-movies.component';
 import { AppRoutingModule } from './app-routing';
 import { SearchMovieComponent } from './search-movie/search-movie.component';
+import { DetailMovieComponent } from './detail-movie/detail-movie.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PopularMoviesComponent,
     TopRatedMoviesComponent,
-    SearchMovieComponent
+    SearchMovieComponent,
+    DetailMovieComponent
   ],
   imports: [
     BrowserModule,

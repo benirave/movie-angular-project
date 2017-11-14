@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { MovieService } from '../services/movie-service.service';
 import { Response } from '@angular/http/src/static_response';
+import { Router, ActivatedRoute, Params } from '@angular/router';
+
+import { MovieService } from '../services/movie-service.service';
+
 
 @Component({
   selector: 'app-popular-movies',
@@ -12,7 +15,9 @@ export class PopularMoviesComponent implements OnInit {
   
   popularMovies: Array<Object>;
 
-  constructor(private service: MovieService) {
+  constructor(private service: MovieService,
+              private router: Router,
+              private route: ActivatedRoute) {
     }
 
   ngOnInit() {
@@ -26,4 +31,5 @@ export class PopularMoviesComponent implements OnInit {
         this.popularMovies = response.results;
     })
   }
+
 }
