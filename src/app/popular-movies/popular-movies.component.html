@@ -1,12 +1,11 @@
-
 <div class="panel-heading">
     <h1>Popular Movies</h1>
   </div>
   <div class="panel-body">
     <div class="row" *ngIf="popularMovies">
       <div *ngFor="let movie of popularMovies, let i = index">             
-              <div *ngIf="i <= 5" class="col-md-2 text-center">
-          <a href="#" routerLink="/app-detail-movie/{{movie.id}}" >
+              <div *ngIf="i <= 7" class="col-md text-center">
+          <a routerLink="/app-detail-movie/{{movie.id}}" >
             <img *ngIf="movie.poster_path" class="img-thumbnail" src="https://image.tmdb.org/t/p/w300/{{movie.poster_path}}">
             <img *ngIf="!movie.poster_path" class="img-thumbnail" src="http://http://ddbu.billiardport.com/img/posters/no_poster_available.jpg">
           </a>
