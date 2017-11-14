@@ -14,8 +14,15 @@ export class MovieService {
     console.log('MoviesThemoviedbService started')
   }
 
+  // Methods
+
   public getPopularMovies() {
     return this.http.get(this.baseUrl + this.movie + 'popular' + this.apikey)
+      .map(result => result.json())
+  }
+
+  public getTopRatedMovies() {
+    return this.http.get(this.baseUrl + this.movie + 'top_rated' + this.apikey)
       .map(result => result.json())
   }
 

@@ -4,11 +4,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { PopularMoviesComponent } from './popular-movies/popular-movies.component';
+import { TopRatedMoviesComponent } from './top-rated-movies/top-rated-movies.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PopularMoviesComponent
+    PopularMoviesComponent,
+    TopRatedMoviesComponent
   ],
   imports: [
     BrowserModule,
