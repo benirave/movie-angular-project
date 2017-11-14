@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Movie } from '../Movie';
-import { MovieService } from '../movie-service.service';
+import { MovieService } from '../services/movie-service.service';
 import { Response } from '@angular/http/src/static_response';
 
 @Component({
