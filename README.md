@@ -1,6 +1,8 @@
 # MovieProject
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.9.
+It is a nearly not done school project to make a Movie page. The project uses "The Movie Database API".
+Documentation can be found here: https://developers.themoviedb.org/3
 
 ## Development server
 
